@@ -1,7 +1,7 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 const calculateTips = bill => bill > 20 ? bill * 15 / 100: bill * 20 / 100 ;
-const bills = ["here is the bills",11, 20, 47];
-const tips = ["here is the tips", calculateTips(11), calculateTips(20), calculateTips(47)];
-const fullbill=["here is the fullbils", bills[0]+tips[0],bills[1]+tips[1],bills[2]+tips[2]];
-console.log(bills, tips, fullbill);
+const bills = [11, 20, 47];
+const tips = [ calculateTips(11), calculateTips(20), calculateTips(47)];
+const fullbill=[ bills[0]+tips[0],bills[1]+tips[1],bills[2]+tips[2]];
+console.log("here are the bills " + bills + " ($) ", "here are the tips "+ tips + "($)","here is  the total "+ fullbill+" ($) ");
